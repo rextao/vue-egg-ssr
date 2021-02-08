@@ -12,6 +12,7 @@
     "egg-cors": "^2.1.1",
     "egg-scripts": "^2.11.0",
     "memory-fs": "^0.5.0",
+    "vue": "^2.6.12",
     "vue-server-renderer": "^2.6.12",
     "webpack": "^4.32.2"
   },

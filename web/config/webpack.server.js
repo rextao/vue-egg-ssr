@@ -1,7 +1,6 @@
 const merge = require('webpack-merge')
 const baseConfig = require('./webpack.base.config.js')
 const path = require('path')
-const VueSSRServerPlugin = require('vue-server-renderer/server-plugin')
 
 module.exports = merge(baseConfig, {
     entry: path.resolve(__dirname,'../entry/entry-server.js'),
@@ -16,7 +15,8 @@ module.exports = merge(baseConfig, {
 
     // 此处告知 server bundle 使用 Node 风格导出模块(Node-style exports)
     output: {
-        libraryTarget: 'commonjs2'
+        libraryTarget: 'commonjs2',
+        path:path.resolve(__dirname,'./../dist'),
     },
 
 
@@ -24,6 +24,5 @@ module.exports = merge(baseConfig, {
     // 构建为单个 JSON 文件的插件。
     // 默认文件名为 `vue-ssr-server-bundle.json`
     plugins: [
-        new VueSSRServerPlugin()
     ]
 })

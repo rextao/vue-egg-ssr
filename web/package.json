@@ -6,6 +6,7 @@
   "scripts": {
     "build-server": "webpack --config config/webpack.server.js",
     "build-client": "webpack --config config/webpack.client.js",
+    "build": "npm run build-client & npm run build-server",
     "dev-client": "webpack serve  --config config/webpack.client.js"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "4",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.12",
     "webpack-cli": "^4.5.0",
