@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(baseConfig, {
     entry: path.resolve(__dirname,'../entry/entry-client.js'),
     output:{
-        path:path.resolve(__dirname,'./../public'),
+        // path:path.resolve(__dirname,'./../public'),
     },
     optimization:{
         runtimeChunk:true

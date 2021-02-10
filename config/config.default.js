@@ -14,7 +14,7 @@ module.exports = appInfo => {
 
   config.static = {
     prefix: '/',
-    dir: path.join(appInfo.baseDir, 'web/dist'),
+    dir: path.join(appInfo.baseDir, 'app/view'),
   };
 
   // add your user config here

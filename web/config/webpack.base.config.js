@@ -1,6 +1,9 @@
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 module.exports = {
+    output: {
+        path:path.resolve(__dirname,'./../../app/view'),
+    },
     mode: 'development',
     module: {
         rules: [
@@ -21,6 +24,12 @@ module.exports = {
                 },
             }
         ]
+    },
+    resolve: {
+        alias:{
+            '@':path.resolve(__dirname,'../')
+        },
+        extensions:['.js','.vue','.json']
     },
     plugins:[
         new VueLoaderPlugin()
