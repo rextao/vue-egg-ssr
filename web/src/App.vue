@@ -1,7 +1,7 @@
 <template>
     <div>
         <div @click='handleClick'>{{msg}}</div>
-        <button @click="handleClick">阿萨复复阿斯dddddd</button>
+        <button @click="handleClick">sssaasassas</button>
     </div>
 </template>
 <script>

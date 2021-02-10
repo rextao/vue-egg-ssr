@@ -6,7 +6,8 @@
   "scripts": {
     "build-server": "webpack --config config/webpack.server.js",
     "build-client": "webpack --config config/webpack.client.js",
-    "build": "npm run build-server & npm run build-client"
+    "build": "npm run build-server & npm run build-client",
+    "dev": "webpack serve  --config config/webpack.client.js"
   },
   "dependencies": {
     "vue": "^2.6.10",

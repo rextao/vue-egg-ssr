@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(baseConfig, {
     entry: path.resolve(__dirname,'../entry/entry-client.js'),
     output:{
-        // path:path.resolve(__dirname,'./../public'),
+        publicPath: 'http://127.0.0.1:8080'
     },
     optimization:{
         runtimeChunk:true
