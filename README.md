@@ -39,9 +39,3 @@
 
 
 # 使用egg代替devserver
-1. 根据官方文档`https://webpack.docschina.org/guides/development/#using-webpack-dev-middleware` 介绍，devServer内部使用webpack-dev-middleware
-    - 故使用egg作为服务器，也可以实现devserver的功能
-1. 
-
-备注
-1. easy，使用（server-side-render-resource  5stars）

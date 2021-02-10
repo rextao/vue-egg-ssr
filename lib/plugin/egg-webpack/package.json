@@ -1,0 +1,8 @@
+{
+  "name": "egg-view-vue-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "eggPlugin": {
+    "name": "eggWebpack"
+  }
+}
