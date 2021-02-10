@@ -14,7 +14,7 @@ module.exports = merge(baseConfig, {
     },
     devServer: {
         headers: {'Access-Control-Allow-Origin': '*'},
-        contentBase: path.resolve(__dirname,'./../dist'),
+        contentBase: path.resolve(__dirname,'./../../app/view'),
     },
     plugins: [
         new VueSSRClientPlugin(),
